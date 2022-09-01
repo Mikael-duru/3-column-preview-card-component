@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  /* Primary Colors */
+  --bright-orange: hsl(31, 77%, 52%); /* sedans bg */
+  --dark-cyan: hsl(184, 100%, 22%); /* suvs bg */
+  --very-dark-cyan: hsl(179, 100%, 13%); /* luxury bg */
+
+  /* Neutral Colors */
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraph */
+  --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons. */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  height: 100vh;
+}
+
+
+/* General Styles Start */
+body {
+  background: var(--very-light-gray);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.m-2 {
+  margin: 2.9rem;
+}
+
+.car-type-icon {
+  margin-bottom: 1.8rem;
+}
+
+.car-type-heading {
+  font-size: 2.5rem;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+}
+
+.car-desc {
+  font-size: 15px;
+  color: var(--transparent-white);
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+.btn {
+  padding: .85rem 2rem;
+  border-radius: 2.4em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  background-color: var(--very-light-gray);
+}
+
+.car-type-card .sedans-bg .btn:hover,
+.car-type-card .suv-bg .btn:hover,
+.car-type-card .luxury-bg .btn:hover {
+  border: 2px solid var(--very-light-gray);
+  color: var(--very-light-gray);
+  background: transparent;
+}
+/* General Styles Ends */
+
+
+/* Main Section Start */
+main {
+  margin-bottom: 3rem;
+}
+
+.car-type-card {
+  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+/* Sedans */
+.car-type-card .sedans-bg {
+  background-color: var(--bright-orange);
+  border-radius: .5rem .5rem 0 0;
+}
+
+.car-type-card .sedans-bg .btn {
+  color: var(--bright-orange);
+}
+
+/* SUVS */
+.car-type-card .suv-bg {
+  background-color: var(--dark-cyan);
+}
+
+.car-type-card .suv-bg .btn {
+  color: var(--dark-cyan);
+}
+
+/* Luxury */
+.car-type-card .luxury-bg {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 .5rem .5rem ;
+}
+
+.car-type-card .luxury-bg .btn {
+  color: var(--very-dark-cyan);
+}
+/* Main Section Ends */
+
+
+/* footer section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* footer ends */
+
+
+/* Responsive Styles */
+
+/* screen size above 768px */
+@media screen and (min-width: 768px) {
+  .car-type-card {
+    width: 870px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn {
+    margin-top: 3.5rem;
+  }
+  
+  .car-type-card .sedans-bg {
+  border-radius: .5rem 0  0 .5rem ;
+}
+
+.car-type-card .luxury-bg {
+  border-radius: 0 .5rem .5rem 0;
+}
+
+}
+
+/* screen size above 1440px */
+@media screen and (min-width: 1440px) {
+  .car-type-card {
+    width: 910px;
+  }
+}
