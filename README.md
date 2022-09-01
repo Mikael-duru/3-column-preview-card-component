@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Mikael-duru/3-column-preview-card-component.git](https://github.com/Mikael-duru/3-column-preview-card-component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://mikael-duru.github.io/3-column-preview-card-component/](https://mikael-duru.github.io/3-column-preview-card-component/)
 
 ## My process
 
