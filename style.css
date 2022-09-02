@@ -79,6 +79,7 @@ body {
 
 /* Main Section Start */
 main {
+  padding-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -124,6 +125,7 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .attribution a {
